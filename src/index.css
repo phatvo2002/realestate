@@ -2,10 +2,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+    --green: #078939;
+    --white: #ffffff;
+    --color-swatches--black: #181f1a;
+    --color-swatches--black2: #484d49;
+    --color-swatches--primary-light: #a5e1bc;
+    --color-swatches--primary: #078939;
+    --color-swatches--light-grey: #f4f4f4;
+    --text-color--text-success: var(--color-swatches--primary);
+    --text-color--text-alternate: var(--color-swatches--black2);
+    --background-color--background-alternate: var(--color-swatches--black);
+    --text-color--text-secondary: var(--color-swatches--light-grey);
+    --background-color--background-tertiary: var(--color-swatches--primary-light);
+    --background-color--background-secondary: var(--color-swatches--light-grey);
+    --border-color--border-secondary: var(--color-swatches--primary-light);
+    --link-color--link-secondary: var(--color-swatches--primary-light);
+  }
+  
 *{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav ul li a.active {
     border-bottom: 2px solid #4CAF50; 
+}
+.home_box{
+    background-color: var(--color-swatches--primary-light);
+    border-radius: 15px;
+}
+.text-size-regular {
+    text-align: left;
+    font-size: 1rem;
+}
+.Multiple_box
+{
+    
+}
+.Multiple_box:hover
+{
+    max-height: 600px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 10px;
+}
+.Explorer_box
+{
+    background-color: var(--color-swatches--light-grey);
+}
+.style_boxshadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.analysis-image-wrapper {
+    background-image: url(https://assets-global.website-files.com/65d96d247cdbea321b6baac5/65e0da87a109123dded252f5_feature-image.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    padding: 1.5rem;
 }
